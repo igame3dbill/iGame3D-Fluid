@@ -167,7 +167,7 @@ for i = 1,5,1 do
 	 table.insert(humanlist,"tomdrinman"..i.."_3k")
 	   table.insert(humanlist,"tomdrinwoman"..i.."_3k")
 	end
---dofile("/ig3d_mac_xcode/Data/Scripts/Convert/pbm_functions.lua")
+--dofile(gameroot.."/Data/Scripts/Convert/pbm_functions.lua")
 --gridInsertDraw
 function gridInsertDraw(x,y,xys)
  	table.insert(btnList,xys) 	

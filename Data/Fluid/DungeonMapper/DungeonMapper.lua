@@ -1,6 +1,6 @@
 --function make_window()
 Q='"'
---loadLevel("Data/Levels/edit/")
+
 ig3d_SetMode_i(1)
 baseBtnColor=16
 grpGrid={}
@@ -26,7 +26,7 @@ WEWall = nil
 NSWall = nil
 TheFloor=nil
 gMapName=item(-1,ig3d_GetLevelName__s(),"/")
-
+gameroot=getSceneInfo(IG3D_ROOT)  -- fix 11-20-2022
 gMapPath = gameroot.."Data/Levels/"..gMapName.."/"
 gMapFile = gameroot.."Data/Levels/"..gMapName.."/"..gMapName.."mapXY.lua"
 gMapMeshPath = gameroot.."Data/Levels/"..gMapName.."/"..gMapName.."map_mesh.wtf"
@@ -80,7 +80,7 @@ for i = 1,5,1 do
 	   table.insert(humanlist,"tomdrinwoman"..i.."_3k")
 	end
 	
-	dofile("/ig3d_mac_xcode/Data/Scripts/Functions/pbm_functions.lua")
+	dofile(gameroot.."Data/Scripts/Functions/pbm_functions.lua")
 --gridInsertDraw
 function gridInsertDraw(x,y,xys)
  	table.insert(btnList,xys) 	

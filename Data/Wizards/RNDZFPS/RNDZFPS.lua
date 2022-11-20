@@ -3,8 +3,9 @@ glistedFiles={}
 gChosenCategory="Humans"
 gCharacterPicked=""
 gLastClick=os.time()
+gameroot=getSceneInfo(IG3D_ROOT)
 gBrowserPath=gameroot.."Data/WTF/Characters"
-if gameroot == nil then gameroot="/ig3d_mac_xcode/" end
+if gameroot == nil then gameroot=getSceneInfo(IG3D_ROOT) end
 HumansList={}
 EnemiesList={}
 WeaponsList={}

@@ -28,7 +28,7 @@ end} {selected
   Fl_Window asksaveLevel {
     label {Please Name and Press Enter}
     callback wClose open
-    xywh {428 357 423 45} type Double non_modal size_range {369 44 369 44} visible
+    xywh {428 357 423 50} type Double non_modal size_range {369 44 369 44} visible
   } {
     Fl_Button Cancel {
       label Cancel
